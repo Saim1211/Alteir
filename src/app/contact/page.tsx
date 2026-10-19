@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { ContactForm } from "@/components/contact-form";
+export const metadata: Metadata = { title: "Contact", description: "Tell Atelier Paint Co. about your interior painting project." };
+export default function ContactPage() { return <main><section className="page-hero"><div className="wrap"><p className="eyebrow">Contact</p><h1>Tell us what you<br /><em>have in mind.</em></h1><p>Share a few details about your rooms, surfaces, and goals to begin planning your project.</p></div></section><section className="section"><div className="wrap form-layout"><div><p className="eyebrow">Start here</p><h2 className="display">Your space,<br /><em>your plan.</em></h2><p className="muted">Tell us which rooms you are considering and what you would like to change.</p><p className="muted">For an itemized starting point, you can also build a preliminary estimate online.</p></div><ContactForm /></div></section></main>; }
